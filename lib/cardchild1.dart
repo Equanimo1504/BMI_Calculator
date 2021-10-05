@@ -6,9 +6,9 @@ class cardchild1 extends StatelessWidget {
     @required this.colour,
     @required this.label,
   });
-  String label;
-  IconData Ikon;
-  Color colour;
+  final label;
+  final IconData Ikon;
+  final Color colour;
   @override
   Widget build(BuildContext context) {
     return Column(
