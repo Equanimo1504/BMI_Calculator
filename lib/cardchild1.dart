@@ -6,7 +6,7 @@ class cardchild1 extends StatelessWidget {
     @required this.colour,
     @required this.label,
   });
-  final label;
+  final String label;
   final IconData Ikon;
   final Color colour;
   @override
