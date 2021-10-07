@@ -5,6 +5,7 @@ import 'cardchild1.dart';
 import 'reusableCard.dart';
 import 'constants.dart';
 import 'result_page.dart';
+import 'calculator_brain.dart';
 
 enum Gender {
   male,
@@ -220,11 +221,17 @@ class _InputPageState extends State<InputPage> {
           ),
           GestureDetector(
             onTap: () {
+              CalculatorBrain calc =
+                  CalculatorBrain(height: height, weight: weight);
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return ResultsPage();
+                    return ResultsPage(
+                      bmiIndex: calc.bmiCalculate(),
+                      interpretation: calc.getInterpretation(),
+                      resultText: calc.getResult(),
+                    );
                   },
                 ),
               );
@@ -236,7 +243,7 @@ class _InputPageState extends State<InputPage> {
                   style: TextStyle(
                     fontSize: 21,
                     fontWeight: FontWeight.bold,
-                    letterSpacing: 8,
+                    letterSpacing: 7,
                   ),
                 ),
               ),
