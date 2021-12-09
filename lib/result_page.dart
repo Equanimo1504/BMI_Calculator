@@ -18,6 +18,7 @@ class ResultsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xFF2982F6),
         title: Padding(
           padding: const EdgeInsets.only(right: 45, left: 45),
           child: Text(
@@ -33,9 +34,10 @@ class ResultsPage extends StatelessWidget {
             child: Container(
               padding: EdgeInsets.fromLTRB(0, 15, 0, 12),
               child: Text(
-                'Your Result',
+                'Your Result!',
                 textAlign: TextAlign.center,
                 style: TextStyle(
+                  color: Color(0xFF04107A),
                   fontSize: 50,
                   fontWeight: FontWeight.bold,
                 ),
@@ -45,7 +47,7 @@ class ResultsPage extends StatelessWidget {
           Expanded(
             flex: 5,
             child: ReusableCard(
-              colour: kActiveCardColour,
+              colour: Color(0xFF2982F6),
               cardChild: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -94,7 +96,7 @@ class ResultsPage extends StatelessWidget {
               margin: EdgeInsets.only(top: 10),
               height: 60,
               width: double.infinity,
-              color: Color(0xFFEB1555),
+              color: Color(0xFF04107A),
             ),
           ),
         ],

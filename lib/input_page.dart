@@ -27,6 +27,7 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xFF2982F6),
         title: Center(
           child: Text('BMI CALCULATOR'),
         ),
@@ -47,8 +48,8 @@ class _InputPageState extends State<InputPage> {
                     cardChild: cardchild1(
                       Ikon: FontAwesomeIcons.mars,
                       colour: selectedGender == Gender.male
-                          ? Color(0xFFEB1555)
-                          : Color(0xFF8D8E98),
+                          ? Color(0xFFF0F0F5)
+                          : Color(0xFFF0F0F5),
                       label: 'MALE',
                     ),
                     colour: selectedGender == Gender.male
@@ -66,8 +67,8 @@ class _InputPageState extends State<InputPage> {
                     cardChild: cardchild1(
                       Ikon: FontAwesomeIcons.venus,
                       colour: selectedGender == Gender.female
-                          ? Color(0xFFEB1555)
-                          : Color(0xFF8D8E98),
+                          ? Color(0xFFF0F0F5)
+                          : Color(0xFFF0F0F5),
                       label: 'FEMALE',
                     ),
                     colour: selectedGender == Gender.female
@@ -105,7 +106,7 @@ class _InputPageState extends State<InputPage> {
                   SliderTheme(
                     data: SliderTheme.of(context).copyWith(
                         trackHeight: 1,
-                        thumbColor: Color(0xFFEB1555),
+                        thumbColor: Color(0xFF04107A),
                         overlayColor: Color(0x29EB1555),
                         activeTrackColor: Colors.white,
                         inactiveTrackColor: Color(0xFF8D8e98),
@@ -250,7 +251,7 @@ class _InputPageState extends State<InputPage> {
               margin: EdgeInsets.only(top: 10),
               height: 60,
               width: double.infinity,
-              color: Color(0xFFEB1555),
+              color: Color(0xFF04107A),
             ),
           )
         ],
